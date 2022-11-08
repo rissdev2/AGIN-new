@@ -1,0 +1,455 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: TCM;
+  src: url(../fonts/TCM_____.TTF);
+}
+.sec-bg {
+  background-image: url(../img/mbl-bg.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+.hero-sec {
+  margin-left: 180px;
+}
+.hero-sec img {
+  margin-top: 200px !important;
+}
+.hero-sec h2 {
+  font-family: TCM;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.753);
+}
+.fot-sec i {
+  font-size: 30px;
+  color: white;
+}
+.fot-sec p {
+  font-size: 30px;
+  color: white;
+  margin: 0px !important;
+}
+.hnd-img img {
+  mix-blend-mode: screen;
+  margin-top: -100px !important;
+  animation: float 3s ease-in-out infinite;
+}
+.pts-1 img {
+  position: absolute;
+  top: 10%;
+  left: 65%;
+}
+.pts-2 img {
+  position: absolute;
+  top: 13%;
+  left: 80%;
+}
+
+/* CSS animation */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatex(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatex(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatex(0px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sec-bg {
+    background-image: url(../img/mbl-bg.png);
+    height: 120vh;
+    background-size: cover;
+    background-position: center center;
+  }
+  .hero-sec {
+    width: 94% !important;
+    margin-left: 20px;
+  }
+  .hero-sec img {
+    margin-top: 20px !important;
+  }
+  .hero-sec h2 {
+    font-size: 25px;
+  }
+  .hnd-img img {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-sec {
+    margin-left: 30px;
+  }
+  .hnd-img img {
+    display: none;
+  }
+
+  .hero-sec h2 {
+    font-size: 27px;
+  }
+}
+
+/* Stars  */
+
+.light {
+  /* height: 100%;
+	width: 100%; */
+}
+.light:after,
+.light:before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.light:before {
+  /* width: 120%;
+	height: 120%;
+	top: 40%;
+	left: -25%; */
+  /* background: radial-gradient(48.58% 48.58% at 49.96% 59.07%, #927CFF 0%, rgba(142, 133, 190, 0.4) 43.23%, rgba(59, 61, 70, 0) 100%); */
+}
+.light:after {
+  /* width: 120%;
+	height: 100%;
+	top: 65%;
+	left: 25%; */
+  /* background: radial-gradient(48.58% 48.58% at 49.96% 59.07%, #FFF38B 0%, rgba(180, 174, 113, 0.45) 38.02%, rgba(59, 61, 70, 0) 100%); */
+}
+
+.star1 {
+  animation: 3s linear 1s infinite alternate twinkle;
+}
+
+.star2 {
+  animation: 4s linear 0s infinite alternate twinkle;
+}
+
+.star3 {
+  animation: 3.5s linear 0.5s infinite alternate twinkle;
+}
+
+.star4 {
+  animation: 1.25s linear 1.5s infinite alternate twinkle;
+}
+
+.star5 {
+  animation: 4s linear 2s infinite alternate twinkle;
+}
+
+.star6 {
+  animation: 2.5s linear 1s infinite alternate twinkle;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* modal  */
+.tooltip-container {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  display: inline-block;
+}
+.tooltip-container1 {
+  cursor: pointer;
+  position: absolute;
+  top: 13%;
+  left: 80%;
+  display: inline-block;
+}
+.tooltip-container2 {
+  cursor: pointer;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  display: inline-block;
+}
+.tooltip-container3 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  display: inline-block;
+}
+.tooltip-container4 {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  left: 83%;
+  display: inline-block;
+}
+.tooltip-container5 {
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  left: 45%;
+  display: inline-block;
+}
+.tooltip-container6 {
+  cursor: pointer;
+  position: absolute;
+  top: 67%;
+  left: 70%;
+  display: inline-block;
+}
+.tooltip {
+  position: absolute;
+  top: 111%;
+  opacity: 0;
+  z-index: 99;
+  color: #bbb;
+  width: 250px;
+  display: block;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #111;
+  background: rgba(51, 51, 51, 0.9);
+  border: 1px solid rgba(34, 34, 34, 0.9);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  position: absolute;
+  right: -80px;
+}
+.tooltip1 {
+  position: absolute;
+  top: 35%;
+  opacity: 0;
+  z-index: 99;
+  color: #bbb;
+  width: 250px;
+  display: block;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #111;
+  background: rgba(51, 51, 51, 0.9);
+  border: 1px solid rgba(34, 34, 34, 0.9);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  position: absolute;
+  left: 111%;
+}
+.tooltip1:before,
+.tooltip1:after {
+  content: "";
+  border-left: 10px solid rgb(51 51 51 / 0%);
+  border-right: 10px solid rgb(51 51 51 / 90%);
+  border-bottom: 10px solid rgb(51 51 51 / 0%);
+  border-top: 10px solid rgb(51 51 51 / 0%);
+  position: absolute;
+  top: 39%;
+  left: -8%;
+}
+.tooltip:before,
+.tooltip:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(51, 51, 51, 0.9);
+  position: absolute;
+  top: -10px;
+  left: 33%;
+}
+
+.tooltip-container:hover .tooltip,
+a:hover .tooltip {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.tooltip-container1:hover .tooltip,
+a:hover .tooltip {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.tooltip-container2:hover .tooltip,
+a:hover .tooltip {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.tooltip-container3:hover .tooltip,
+a:hover .tooltip {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.tooltip-container4:hover .tooltip,
+a:hover .tooltip {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.tooltip-container5:hover .tooltip1,
+a:hover .tooltip1 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.tooltip-container6:hover .tooltip,
+a:hover .tooltip {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+@media only screen and (max-width: 600px) {
+  .sec-bg{
+      background-image: url(../img/mbl-bg.png);
+      height: 120vh;
+      background-size: cover;
+      background-position: center center ;
+  }
+.hero-sec{
+  margin-left: 20px;
+}
+  .hero-sec img{
+      margin-top: 20px !important;
+  }
+  .hero-sec h2{
+      font-size: 25px;
+  }
+.hnd-img img{
+  display: none;
+}
+  .tooltip-container{
+      top: 30%;
+      left: 13%;
+  }
+  .tooltip-container1{
+      top: 30%;
+      left: 65%; 
+  }
+ 
+  .tooltip-container2{
+      top: 57%;
+      left: 13%; 
+  }
+ 
+  .tooltip-container3{
+      top: 50%;
+      left: 54%; 
+  }
+ 
+  .tooltip-container4{
+      top: 83%;
+      left: 13%;
+  }
+
+  .tooltip-container5{
+      top: 62%;
+      left: 54%; 
+  }
+ 
+  .tooltip-container6{
+      top:80%;
+      left: 55%; 
+  }
+ 
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.hero-sec{
+  margin-left: 30px;
+}
+.hnd-img img{
+  display: none;
+}
+
+.hero-sec h2 {
+font-size: 27px;
+}
+
+}
