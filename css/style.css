@@ -33,7 +33,7 @@ body {
   margin: 0px !important;
 }
 .hnd-img img {
-  width: 110%;
+  width: 100%;
   mix-blend-mode: screen;
   margin-top: 0px !important;
   animation: float 3s ease-in-out infinite;
