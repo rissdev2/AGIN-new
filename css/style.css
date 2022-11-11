@@ -418,7 +418,7 @@ a:hover .tooltip {
 @media only screen and (max-width: 600px) {
   .sec-bg{
       background-image: url(../img/mbl-bg.png);
-      height: 120vh;
+      height: 140vh;
       background-size: cover;
       background-position: center center ;
   }
@@ -446,13 +446,13 @@ a:hover .tooltip {
  width: 70px;
 }
 .tooltip-container3 img{
- width: 115px;
+ width: 63px;
 }
 .tooltip-container4 img{
   width: 100px;
  }
  .tooltip-container5 img{
-  width: 115px;
+  width: 90px;
  }
  .tooltip-container6 img{
   width: 100px;
@@ -472,8 +472,8 @@ a:hover .tooltip {
   }
  
   .tooltip-container3{
-      top: 56%;
-      left: 50%; 
+      top: 58%;
+      left: 67%; 
   }
  
   .tooltip-container4{
@@ -482,17 +482,20 @@ a:hover .tooltip {
   }
 
   .tooltip-container5{
-      top: 65%;
-      left: 46%; 
+      top: 100%;
+      left: 39%; 
   }
  
   .tooltip-container6{
-      top:80%;
-      left: 55%; 
+      top:83%;
+      left: 61%; 
   }
   .tooltip{
     width: 170px;
-    right: -5px;
+    right: -25px !important;
+  }
+  .set-tooltip{
+    right: -50px !important;
   }
   .tooltip1{
     width: 170px;
